@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Main Portfolio -->
+  <url>
+    <loc>https://safaltamang.com.np/</loc>
+    <lastmod>2025-09-04T18:30:00+00:00</lastmod>
+  </url>
+
+  <!-- CV Document -->
+  <url>
+    <loc>https://safaltamang.com.np/assets/docs/safal_cv.pdf</loc>
+    <lastmod>2025-09-04T18:30:00+00:00</lastmod>
+  </url>
+
+  <!-- Future Blog (if enabled) -->
+  <url>
+    <loc>https://safaltamang.com.np/blog</loc>
+    <lastmod>2025-09-04T18:30:00+00:00</lastmod>
+  </url>
+
+</urlset>
