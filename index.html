@@ -1,331 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Safal - Data Scientist Portfolio">
-  <meta name="description" content="Personal portfolio of Safal Tamang, a passionate data scientist specializing in data analysis and machine learning.">
-  <meta name="keywords" content="data science, machine learning, portfolio, Safal Tamang">
+  <meta name="title" content="Safal Tamang — Data Scientist & AI/ML Engineer">
+  <meta name="description"
+    content="Portfolio of Safal Tamang, a final-year BSc CSIT student building end-to-end machine learning systems, REST APIs, and full-stack AI applications.">
+  <meta name="keywords" content="data science, machine learning, AI, portfolio, Safal Tamang, FastAPI, React">
   <meta name="author" content="Safal Tamang">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◆</text></svg>">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <title>Safal Tamang</title>
+  <title>Safal Tamang — Data Scientist &amp; AI/ML Engineer</title>
 </head>
+
 <body>
+
+  <div class="grain" aria-hidden="true"></div>
+
   <!-- Header -->
   <header class="header" data-header>
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="./assets/images/safal2.png" width="64" height="24" alt="Safal Tamang Logo">
-        <!-- Replace with: "./assets/images/safal2.png" -->
+    <div class="container header-row">
+      <a href="#top" class="logo">
+        <span class="logo-mark">◆</span>
+        <span class="logo-text">S. Tamang</span>
       </a>
+
       <nav class="navbar" data-navbar>
         <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./assets/images/safal2.png" width="100" height="24" alt="Safal Tamang Logo">
-            <!-- Replace with: "./assets/images/safal.jpeg" -->
-          </a>
+          <span class="logo-text">Menu</span>
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
         <ul class="navbar-list">
-          <li><a href="#home" class="navbar-link">Home</a></li>
-          <li><a href="#about" class="navbar-link">About</a></li>
-          <li><a href="#skills" class="navbar-link">Skills</a></li>
-          <li><a href="#education" class="navbar-link">Education</a></li>
-          <li><a href="#contact" class="navbar-link">Contact</a></li>
+          <li><a href="#about" class="navbar-link" data-nav-toggler><span class="idx">01</span>About</a></li>
+          <li><a href="#skills" class="navbar-link" data-nav-toggler><span class="idx">02</span>Skills</a></li>
+          <li><a href="#projects" class="navbar-link" data-nav-toggler><span class="idx">03</span>Projects</a></li>
+          <li><a href="#achievements" class="navbar-link" data-nav-toggler><span class="idx">04</span>Achievements</a>
+          </li>
+          <li><a href="#education" class="navbar-link" data-nav-toggler><span class="idx">05</span>Education</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-toggler><span class="idx">06</span>Contact</a></li>
         </ul>
-        <div class="wrapper">
+        <div class="navbar-footer">
           <a href="mailto:safaltamang059@gmail.com" class="contact-link">safaltamang059@gmail.com</a>
-          <a href="tel:+9779863943535" class="contact-link">+977-9863943535</a>
+          <a href="tel:+9779863943535" class="contact-link">+977 986-3943535</a>
         </div>
-        <ul class="social-list">
-          <li><a href="https://www.linkedin.com/in/safal-tamang-521a15352" class="social-link"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon></a></li>
-          <li><a href="https://www.facebook.com/safal.tamang.543792?mibextid=wwXIfr&mibextid=wwXIfr" class="social-link"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
-          <li><a href="https://github.com/safalT1" class="social-link"><ion-icon name="logo-github" aria-hidden="true"></ion-icon></a></li>
-          <li><a href="https://www.instagram.com/safalgrangdan?igsh=eXkwbGh5ZmNkNXQ4" class="social-link"><ion-icon name="logo-instagram" aria-hidden="true"></ion-icon></a></li>
-        </ul>
       </nav>
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-ghost header-cta">Get in touch</a>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
       <div class="overlay" data-nav-toggler data-overlay></div>
     </div>
   </header>
-  
-  <main>
-    <article>
-      <!-- Hero Section -->
-      <section class="section hero" id="home" aria-label="home">
-        <div class="container">
-          <figure class="hero-banner">
-            <img src="./assets/images/safalphoto.png" alt="Safal Tamang, Data Scientist" class="w-100">
-            <!-- Replace with: "./assets/images/safalphoto.png" -->
-          </figure>
-          <div class="hero-content">
-            <h1 class="h1 hero-title">I'm Safal Tamang</h1>
-            <p class="section-text">
-              Hi! I’m Safal Tamang, a passionate data scientist with experience in data analysis, machine learning, and data-driven decision making. I love solving real-world problems using data.
-            </p>
-            <div class="btn-wrapper">
-              <a href="./assets/docs/safal_cv.pdf" class="btn btn-primary" download>Download My CV</a>
-              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="section hero" id="home" aria-label="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy" data-reveal="left">
+          <p class="cell-tag"><span class="cell-idx">In [1]:</span> whoami</p>
+          <h1 class="h1 hero-title">
+            Safal Tamang <span class="hero-title-line">turns raw data into<br> working <em>decisions</em>.</span>
+          </h1>
+          <p class="section-text hero-text">
+            Final-year BSc CSIT student building end-to-end machine learning systems,
+            REST APIs, and full-stack AI applications — from wildfire-risk models to
+            retrieval-augmented assistants.
+          </p>
+
+          <div class="status-row">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to Data Science &amp; AI/ML roles
+          </div>
+
+          <div class="btn-wrapper">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="./assets/images/Resume_Safal.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-solid fa-file-pdf" style="margin-right: 8px;"></i>Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" data-reveal="right">
+          <div class="hero-photo-wrapper">
+            <div class="hero-background-glow" aria-hidden="true"></div>
+            <div class="hero-photo-container">
+              <img src="./assets/images/safalphoto.png" alt="Safal Tamang — Data Scientist & AI/ML Engineer"
+                class="hero-photo" width="480" height="480" loading="eager">
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- About Section -->
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-          <div class="wrapper">
-            <div>
-              <h2 class="h2 section-title">What I Do?</h2>
-              <p class="section-text">
-                I turn raw data into actionable insights using data wrangling, visualization, and machine learning. With a strong foundation in statistics and programming, I solve complex problems and help businesses make data-driven decisions.
-              </p>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about" aria-label="about">
+      <div class="container">
+        <p class="cell-tag"><span class="cell-idx">In [2]:</span> about.describe()</p>
+        <div class="wrapper">
+          <div>
+            <h2 class="h2 section-title">What I do</h2>
+            <p class="section-text">
+              I build machine learning systems end to end — from cleaning messy data and
+              engineering features, to training and comparing models, to shipping them
+              behind a real API and interface. I care about the last mile: a model that
+              never leaves a notebook doesn't help anyone make a decision.
+            </p>
+          </div>
+        </div>
+
+        <ul class="grid-list about-grid">
+          <li>
+            <div class="about-card" data-reveal="bottom">
+              <span class="card-icon"><i class="fa-solid fa-chart-line"></i></span>
+              <h3 class="h4 card-title">Data Analysis</h3>
+              <p class="card-text">Explore and clean complex datasets to extract actionable insight with Pandas, NumPy,
+                and Feature Engineering.</p>
             </div>
-            <ul class="progress-list">
-              <li class="progress-item">
-                <div class="label-wrapper">
-                  <p>Data Analysis (Pandas/Numpy)</p>
-                  <span class="span">95%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-fill" style="width: 95%; background-color: #c7b1dd;"></div>
+          </li>
+          <li>
+            <div class="about-card" data-reveal="bottom">
+              <span class="card-icon"><i class="fa-solid fa-brain"></i></span>
+              <h3 class="h4 card-title">Machine Learning</h3>
+              <p class="card-text">Train and compare Random Forest, Gradient Boosting, XGBoost, and Naive Bayes models
+                with Scikit-learn.</p>
+            </div>
+          </li>
+          <li>
+            <div class="about-card" data-reveal="bottom">
+              <span class="card-icon"><i class="fa-solid fa-diagram-project"></i></span>
+              <h3 class="h4 card-title">Full-Stack AI</h3>
+              <p class="card-text">Serve predictions with FastAPI and build interfaces in React, backed by MongoDB and
+                JWT auth.</p>
+            </div>
+          </li>
+          <li>
+            <div class="about-card" data-reveal="bottom">
+              <span class="card-icon"><i class="fa-solid fa-robot"></i></span>
+              <h3 class="h4 card-title">Generative AI</h3>
+              <p class="card-text">Build Retrieval-Augmented Generation pipelines and prompt-engineered assistants over
+                real documents.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills" id="skills" aria-label="skills">
+      <div class="container">
+        <p class="cell-tag"><span class="cell-idx">In [3]:</span> skills.groupby("category")</p>
+        <h2 class="h2 section-title">Technical Skills</h2>
+        <div class="skills-layout">
+          <div class="skill-group" data-reveal="bottom">
+            <h3><i class="fa-solid fa-code"></i> Languages</h3>
+            <ul class="chip-list">
+              <li>Python</li>
+              <li>Java</li>
+              <li>C</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal="bottom">
+            <h3><i class="fa-solid fa-layer-group"></i> Frameworks</h3>
+            <ul class="chip-list">
+              <li>FastAPI</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>.NET</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal="bottom">
+            <h3><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+            <ul class="chip-list">
+              <li>Scikit-learn</li>
+              <li>Random Forest</li>
+              <li>Gradient Boosting</li>
+              <li>Naive Bayes</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal="bottom">
+            <h3><i class="fa-solid fa-microchip"></i> Deep Learning</h3>
+            <ul class="chip-list">
+              <li>PyTorch</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal="bottom">
+            <h3><i class="fa-solid fa-chart-simple"></i> Data &amp; Visualization</h3>
+            <ul class="chip-list">
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+              <li>Jupyter Notebook</li>
+              <li>Feature Engineering</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal="bottom">
+            <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Generative AI</h3>
+            <ul class="chip-list">
+              <li>RAG</li>
+              <li>Prompt Engineering</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal="bottom">
+            <h3><i class="fa-solid fa-globe"></i> Web Technologies</h3>
+            <ul class="chip-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Tailwind CSS</li>
+              <li>REST APIs</li>
+              <li>Leaflet</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal="bottom">
+            <h3><i class="fa-solid fa-database"></i> Database &amp; Tools</h3>
+            <ul class="chip-list">
+              <li>MongoDB</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>JWT Auth</li>
+              <li>Joblib</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects" aria-label="projects">
+      <div class="container">
+        <p class="cell-tag"><span class="cell-idx">In [4]:</span> projects.sort_values("impact", ascending=False)</p>
+        <h2 class="h2 section-title">Projects</h2>
+        <p class="section-text projects-intro">Four shipped systems — a wildfire-risk platform, a revenue predictor,
+          a RAG-powered assistant, and an Airbnb room type classifier.</p>
+
+        <div class="project-list">
+
+          <article class="project-card" data-reveal="bottom">
+            <div class="project-media" aria-hidden="true">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3 class="h4">AgniDrishti Nepal</h3>
+                <span class="project-kicker">Wildfire prediction platform</span>
+              </div>
+              <p class="card-text">
+                A full-stack wildfire monitoring platform with Random Forest and Naive Bayes
+                risk models, live data from NASA FIRMS, OpenWeatherMap, and Open-Elevation,
+                plus role-based dashboards, alerting, and historical statistics.
+              </p>
+              <ul class="tag-list">
+                <li>React</li>
+                <li>FastAPI</li>
+                <li>Tailwind CSS</li>
+                <li>MongoDB</li>
+                <li>Random Forest</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/safalT1" target="_blank" rel="noopener" class="link-chip"><i
+                    class="fa-brands fa-github"></i> Code</a>
+                <a href="#" id="agnidrishti-demo-btn" class="link-chip link-chip-demo" data-agnidrishti-demo><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal="bottom">
+            <div class="project-media" aria-hidden="true">
+              <i class="fa-solid fa-clapperboard"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3 class="h4">Box Office Revenue Prediction</h3>
+                <span class="project-kicker">Machine learning web application</span>
+              </div>
+              <p class="card-text">
+                An end-to-end app that predicts movie revenue, comparing XGBoost, Random
+                Forest, Gradient Boosting, and a Stacking Regressor, served through FastAPI
+                with an interactive frontend and full EDA in Pandas and NumPy.
+              </p>
+              <ul class="tag-list">
+                <li>XGBoost</li>
+                <li>FastAPI</li>
+                <li>Pandas</li>
+                <li>Feature Engineering</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/safalT1/Box_Office_Revenue_Prediction" target="_blank" rel="noopener" class="link-chip"><i
+                    class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal="bottom">
+            <div class="project-media" aria-hidden="true">
+              <i class="fa-solid fa-road-circle-check"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3 class="h4">RegDocument Assistant</h3>
+                <span class="project-kicker">Nepal traffic rules information system</span>
+              </div>
+              <p class="card-text">
+                A web app that answers questions about Nepal's traffic rules, road signs,
+                required documents, and penalties, using a Retrieval-Augmented Generation
+                pipeline over official traffic documents.
+              </p>
+              <ul class="tag-list">
+                <li>FastAPI</li>
+                <li>React</li>
+                <li>RAG</li>
+                <li>Prompt Engineering</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/safalT1/RAG-Document-Assistant" target="_blank" rel="noopener" class="link-chip"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal="bottom">
+            <div class="project-media" aria-hidden="true">
+              <i class="fa-solid fa-bed"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3 class="h4">NYC Room Prediction AI</h3>
+                <span class="project-kicker">Machine learning classification system</span>
+              </div>
+              <p class="card-text">
+                A containerized web application that predicts Airbnb room types in New York City based on listing features. It features a custom responsive frontend, a FastAPI backend, and a scikit-learn machine learning pipeline.
+              </p>
+              <ul class="tag-list">
+                <li>Scikit-learn</li>
+                <li>FastAPI</li>
+                <li>Docker</li>
+                <li>HTML/CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/safalT1/NYC-Room-Prediction-AI" target="_blank" rel="noopener" class="link-chip"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://nyc-room-prediction-ai.onrender.com/" target="_blank" rel="noopener" class="link-chip link-chip-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS ===================== -->
+    <section class="section achievements" id="achievements" aria-label="achievements">
+      <div class="container">
+        <p class="cell-tag"><span class="cell-idx">In [5]:</span> achievements.log()</p>
+        <h2 class="h2 section-title">Achievements &amp; Certifications</h2>
+
+        <div class="achieve-layout">
+          <div class="achieve-col">
+            <h3 class="h5 achieve-heading"><i class="fa-solid fa-trophy"></i> Achievements</h3>
+            <ul class="achieve-list">
+              <li data-reveal="left">
+                <span class="achieve-dot"></span>
+                <div>
+                  <p class="achieve-title">Second Runner-Up — Tech Sprint Hackathon</p>
+                  <p class="achieve-sub">Placed top three among competing teams on a timed build-and-pitch challenge.
+                  </p>
                 </div>
               </li>
-              <li class="progress-item">
-                <div class="label-wrapper">
-                  <p>Machine Learning</p>
-                  <span class="span">90%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-fill" style="width: 90%; background-color: #8caeec;"></div>
-                </div>
-              </li>
-              <li class="progress-item">
-                <div class="label-wrapper">
-                  <p>Data Visualization (Matplotlib/Seaborn/Power BI)</p>
-                  <span class="span">88%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-fill" style="width: 88%; background-color: #b0d4c1;"></div>
-                </div>
-              </li>
-              <li class="progress-item">
-                <div class="label-wrapper">
-                  <p>SQL & Databases</p>
-                  <span class="span">85%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-fill" style="width: 85%; background-color: #e3a6b6;"></div>
+              <li data-reveal="left">
+                <span class="achieve-dot"></span>
+                <div>
+                  <p class="achieve-title">Three shipped end-to-end AI applications</p>
+                  <p class="achieve-sub">Designed, trained, and deployed full ML products using FastAPI and React.</p>
                 </div>
               </li>
             </ul>
           </div>
-          <ul class="grid-list">
-            <li>
-              <div class="about-card">
-                <div class="card-icon">
-                  <img src="./assets/images/dataanlysis.png" loading="lazy" alt="Data Analysis icon">
-                  <!-- Replace with: "./assets/images/dataanalysis.png" -->
+
+          <div class="achieve-col">
+            <h3 class="h5 achieve-heading"><i class="fa-solid fa-certificate"></i> Certifications &amp; Training</h3>
+            <ul class="achieve-list">
+              <li data-reveal="right">
+                <span class="achieve-dot achieve-dot-alt"></span>
+                <div>
+                  <p class="achieve-title">Data Scientist Career Track</p>
+                  <p class="achieve-sub">DataCamp</p>
                 </div>
-                <h3 class="h4 card-title">Data Analysis</h3>
-                <p class="card-text">
-                  Explore and clean complex datasets to extract actionable insights. Skilled in Python libraries like Pandas and NumPy.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="about-card">
-                <div class="card-icon">
-                  <img src="./assets/images/ml.avif" loading="lazy" alt="Machine Learning icon">
-                  <!-- Replace with: "./assets/images/ml.avif" -->
+              </li>
+              <li data-reveal="right">
+                <span class="achieve-dot achieve-dot-alt"></span>
+                <div>
+                  <p class="achieve-title">Python for Data Science and Machine Learning</p>
+                  <p class="achieve-sub">Course certification</p>
                 </div>
-                <h3 class="h4 card-title">Machine Learning</h3>
-                <p class="card-text">
-                  Build predictive models using supervised and unsupervised learning with tools like Scikit-learn and XGBoost.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="about-card">
-                <div class="card-icon">
-                  <img src="./assets/images/data-visualization.webp" loading="lazy" alt="Data Visualization icon">
-                  <!-- Replace with: "./assets/images/data-visualization.webp" -->
+              </li>
+              <li data-reveal="right">
+                <span class="achieve-dot achieve-dot-alt"></span>
+                <div>
+                  <p class="achieve-title">Git and GitHub</p>
+                  <p class="achieve-sub">Course certification</p>
                 </div>
-                <h3 class="h4 card-title">Data Visualization</h3>
-                <p class="card-text">
-                  Create meaningful visuals using Matplotlib, Seaborn, and Power BI to communicate data-driven stories.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="about-card">
-                <div class="card-icon">
-                  <img src="./assets/images/sql.png" loading="lazy" alt="SQL & Databases icon">
-                  <!-- Replace with: "./assets/images/sql.png" -->
-                </div>
-                <h3 class="h4 card-title">SQL & Databases</h3>
-                <p class="card-text">
-                  Write efficient SQL queries to extract, filter, and aggregate data from relational databases like MySQL and PostgreSQL.
-                </p>
-              </div>
-            </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section education" id="education" aria-label="education">
+      <div class="container">
+        <p class="cell-tag"><span class="cell-idx">In [6]:</span> education.timeline()</p>
+        <h2 class="h2 section-title">Education</h2>
+
+        <div class="education-entry" data-reveal="bottom">
+          <div class="education-header">
+            <h3>Bachelor of Science in Computer Science and Information Technology</h3>
+            <span class="dates">2023 – 2026 (Expected)</span>
+          </div>
+          <p class="institution">Tribhuwan University</p>
+          <p class="college">Madan Bhandari Memorial College, Kathmandu</p>
+          <ul>
+            <li>Currently in 6th semester, with no backlogs.</li>
+            <li>Consistently maintaining CGPA above 3.0 across all semesters to date.</li>
+            <li>Focus areas: Software Development, Artificial Intelligence, Data Science.</li>
           </ul>
         </div>
-      </section>
 
-      <!-- Skills Section -->
-      <section class="section skills" id="skills" aria-label="skills">
-        <div class="container">
-          <h2 class="section-title collapsible-trigger">
-            <span class="diamond-icon" aria-hidden="true">◆</span> Technical Skills <span class="toggle-icon">+</span>
-          </h2>
-          <div class="collapsible-content">
-            <div class="skills-layout">
-              <div class="skill-group">
-                <h3>Programming & AI/ML</h3>
-                <ul>
-                  <li>Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn)</li>
-                  <li>C, C++</li>
-                  <li>Machine Learning Algorithms (Regression, Classification, Clustering)</li>
-                  <li>Deep Learning (Conceptual: CNNs, RNNs)</li>
-                  <li>Data Preprocessing & Feature Engineering</li>
-                  <li>Model Evaluation & Validation</li>
-                  <li>Basic Statistics for AI</li>
-                </ul>
-              </div>
-              <div class="skill-group">
-                <h3>Web & Database</h3>
-                <ul>
-                  <li>HTML5, CSS3</li>
-                  <li>JavaScript (ES6+)</li>
-                  <li>jQuery</li>
-                  <li>PHP (Procedural & Basic OOP)</li>
-                  <li>phpMyAdmin (MySQL/MariaDB Interaction)</li>
-                  <li>Git & GitHub</li>
-                </ul>
-              </div>
-              <div class="skill-group">
-                <h3>Software & Tools</h3>
-                <ul>
-                  <li>MS Office Suite (Word, Excel, PowerPoint)</li>
-                  <li>Data Entry & Analysis Tools</li>
-                  <li>Data Visualization Tools (Matplotlib, Seaborn)</li>
-                  <li>IDE/Editors (VS Code, Dev-C++, etc.)</li>
-                  <li>Basic UI/UX Principles</li>
-                  <li>Fluent in English, Nepali, and Hindi</li>
-                </ul>
-              </div>
-            </div>
+        <div class="education-entry" data-reveal="bottom">
+          <div class="education-header">
+            <h3>Higher Secondary Education (+2 Science)</h3>
+            <span class="dates">Completed 2022</span>
+          </div>
+          <p class="institution">Dhulabari Mavi, Jhapa</p>
+          <ul>
+            <li>Major: Science, with a Computer Science focus.</li>
+            <li>Final CGPA: 3.01</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact" aria-label="contact">
+      <div class="container">
+        <p class="cell-tag"><span class="cell-idx">In [7]:</span> contact.send()</p>
+        <h2 class="h2 section-title">Let's build something</h2>
+        <p class="contact-intro">
+          Open to Data Science, Machine Learning, and AI/ML Engineering roles — and always glad
+          to talk through a project idea.
+        </p>
+
+        <div class="contact-methods">
+          <a href="mailto:safaltamang059@gmail.com" class="contact-method" data-reveal="bottom">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email</h4>
+            <p>safaltamang059@gmail.com</p>
+          </a>
+          <a href="tel:+9779863943535" class="contact-method" data-reveal="bottom">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Phone</h4>
+            <p>+977 986-3942535</p>
+          </a>
+          <div class="contact-method" data-reveal="bottom">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Location</h4>
+            <p>Santinagar, Kathmandu, Nepal</p>
           </div>
         </div>
-      </section>
 
-      <!-- Education Section -->
-      <section class="section education" id="education" aria-label="education">
-        <div class="container">
-          <h2 class="section-title collapsible-trigger">
-            <span class="diamond-icon" aria-hidden="true">◆</span> Education <span class="toggle-icon">+</span>
-          </h2>
-          <div class="collapsible-content">
-            <div class="education-entry">
-              <div class="education-header">
-                <h3>Bachelor of Science in Computer Science and Information Technology</h3>
-                <span class="dates">2023 - 2026 (Expected)</span>
-              </div>
-              <p class="institution">Tribhuwan University</p>
-              <p class="college">Madan Bhandari Memorial College, Kathmandu</p>
-              <ul>
-                <li>Currently in 6th semester, with no backlogs.</li>
-                <li>Consistently maintaining CGPA above 3.0 in all semesters to date.</li>
-                <li>Focus areas: Software Development, Artificial Intelligence, Data Science.</li>
-              </ul>
-            </div>
-            <div class="education-entry">
-              <div class="education-header">
-                <h3>Higher Secondary Education (NEB)</h3>
-                <span class="dates">2020 - 2022</span>
-              </div>
-              <p class="institution">Dhulabari Mavi, Jhapa</p>
-              <ul>
-                <li>Major: Science (Computer Science Focus)</li>
-                <li>Final CGPA: 3.01</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        <ul class="social-list social-list-footer">
+          <li><a href="https://www.linkedin.com/in/safal-tamang-521a15352" target="_blank" rel="noopener"
+              class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/safalT1" target="_blank" rel="noopener" class="social-link"
+              aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.facebook.com/safal.tamang.543792" target="_blank" rel="noopener" class="social-link"
+              aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/safalgrangdan" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </section>
 
-      <!-- Contact Section -->
-      <section class="section contact" id="contact" aria-label="contact">
-        <div class="container">
-          <h2 class="section-title"><span class="diamond-icon" aria-hidden="true">◆</span> Get In Touch</h2>
-          <p class="contact-intro">I'm always excited to discuss new projects, innovative ideas, or opportunities related to Software Development and AI/ML. Feel free to reach out!</p>
-          <div class="contact-methods">
-            <div class="contact-method">
-              <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
-              <h4>Email</h4>
-              <p><a href="mailto:safaltamang059@gmail.com">safaltamang059@gmail.com</a></p>
-              <p><a href="mailto:safal3667@gmail.com">safal3667@gmail.com</a></p>
-            </div>
-            <div class="contact-method">
-              <i class="fas fa-phone fa-2x" aria-hidden="true"></i>
-              <h4>Phone</h4>
-              <p><a href="tel:+9779863943535">+977 9863943535</a></p>
-            </div>
-            <div class="contact-method">
-              <i class="fas fa-map-marker-alt fa-2x" aria-hidden="true"></i>
-              <h4>Location</h4>
-              <p>Santinagar, Kathmandu, Nepal</p>
-            </div>
-          </div>
-          <div class="social-links-footer">
-
-             <ul class="social-list">
-                <li><a href="https://www.linkedin.com/in/safal-tamang-521a15352" class="social-link"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon></a></li>
-                <li><a href="https://www.facebook.com/safal.tamang.543792?mibextid=wwXIfr&mibextid=wwXIfr" class="social-link"><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon></a></li>
-                <li><a href="https://github.com/safalT1" class="social-link"><ion-icon name="logo-github" aria-hidden="true"></ion-icon></a></li>
-                <li><a href="mailto:safaltamang059@gmail.com" class="social-link" aria-label="Email"><ion-icon name="mail-outline" aria-hidden="true"></ion-icon></a></li>
-             </ul>
-
-         
-          </div>
-        </div>
-      </section>
-    </article>
   </main>
 
-  <!-- Footer -->
+  <!-- ===== AgniDrishti Wake-up Modal ===== -->
+  <div id="agni-modal" class="agni-modal" role="dialog" aria-modal="true" aria-labelledby="agni-modal-title" hidden>
+    <div class="agni-modal-card">
+      <div class="agni-modal-icon">
+        <i class="fa-solid fa-fire"></i>
+      </div>
+      <h3 id="agni-modal-title" class="agni-modal-title">Waking up AgniDrishti</h3>
+      <p id="agni-modal-status" class="agni-modal-status">Starting the backend server on Render&hellip;</p>
+      <div class="agni-spinner" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="agni-progress-track" aria-hidden="true">
+        <div id="agni-progress-bar" class="agni-progress-bar"></div>
+      </div>
+      <p class="agni-modal-note">Free-tier servers sleep when idle. This usually takes <strong>30&ndash;60
+          seconds</strong>.</p>
+      <button id="agni-modal-cancel" class="agni-cancel-btn">Cancel</button>
+    </div>
+  </div>
+
   <footer class="footer">
-    <div class="container">
-      <p class="copyright">© 2025 Safal Tamang. All rights reserved.</p>
-    
+    <div class="container footer-row">
+      <p class="copyright">© 2026 Safal Tamang. All rights reserved.</p>
+      <p class="footer-tag">Built with Python-brain &amp; React-hands.</p>
     </div>
   </footer>
 
-  <!-- Custom JS -->
   <script src="script.js"></script>
-
-  <!-- Ionicon -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

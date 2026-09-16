@@ -27,7 +27,7 @@ A clean, responsive personal portfolio website built with **HTML**, **CSS**, and
 ---
 
 📧 **Email:** [safaltamang059@gmail.com](mailto:safaltamang059@gmail.com)  
-📱 **Phone:** [+9779863943535](tel:+9779863943535)  
+📱 **Phone:** [+9779863943535](tel:+9779863942535)  
 🔗 **LinkedIn:** [Safal Tamang](https://www.linkedin.com/in/safal-tamang-521a15352)  
 💻 **GitHub:** [safalT1](https://github.com/safalT1)  
 
